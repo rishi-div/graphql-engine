@@ -14,12 +14,12 @@ Azure Monitor Integration
  
 Introduction
 ------------
-You can export metrics, operation logs and traces of your Hasura Cloud project to `Azure Monitor <https://azure.microsoft.com/en-in/services/monitor/>`_.
+You can export metrics, operation logs and traces in your Hasura Cloud project to `Azure Monitor <https://azure.microsoft.com/en-in/services/monitor/>`_.
 This can be configured on the integrations tab on the project's setting page.
 
 .. note::
 
-    Azure monitor Integration is only available for Hasura Cloud projects on the ``Standard`` (pay-as-you-go) tier and above.
+    The Azure Monitor Integration is only available for Hasura Cloud projects on the ``Standard`` (pay-as-you-go) tier and above.
 
 Prerequisites
 -------------
@@ -75,10 +75,10 @@ Prerequisites
         :alt: Instrumentation Key
         :width: 1146px
 
-Configure Azure Monitor integration
+Configure the Azure Monitor integration
 -----------------------------------
 
-Navigate to the integrations tab on project settings page to find Azure Monitor integration.
+Navigate to the integrations tab on project settings page to find the Azure Monitor integration.
 
 .. thumbnail:: /img/graphql/cloud/metrics/integrate-azure-monitor.png
    :alt: Configure Azure Monitor Integration
@@ -109,17 +109,17 @@ After adding appropriate values in the Azure monitor Integration panel, click ``
 Checking the status of the integration
 --------------------------------------
 
-The green/red dot signifies the status of the integration. For each of the telemetry types(logs, metrics, traces) green signifies successful exporting of the telemetry to Azure monitor. 
-``Last Exported`` is continuously updated, indicating the timestamp of the last telemetry(log, metric, trace) successfully exported to your Azure monitor dashboard.
+The green/red dot signifies the status of the integration. For each of the telemetry types(logs, metrics, traces) green signifies the successful export of telemetry data to Azure monitor. 
+``Last Exported`` is continuously updated, indicating the timestamp of the last telemetry data (logs, metrics, traces) that were successfully exported to your Azure Monitor dashboard.
 
 .. thumbnail:: /img/graphql/cloud/metrics/configure-azure-monitor-done.png
    :alt: Azure monitor Integration successfully configured
    :width: 1146px
 
-In case of error while exporting any of telemetries(logs, metrics, traces) to Azure monitor, the dot becomes red and the error messages/instructios are displayed. Click ``Update Settings`` button to update the config parameters.
+In case of errors while exporting any of telemetries(logs, metrics, traces) to Azure Monitor, the dot becomes red and the error messages/instructios are displayed. Click ``Update Settings`` button to update the config parameters.
 
 .. thumbnail:: /img/graphql/cloud/metrics/configure-azure-monitor-fail.png
-   :alt: Azure monitor Integration unable to push logs
+   :alt: Azure Monitor Integration unable to push logs
    :width: 1146px
 
 View metrics
@@ -132,7 +132,7 @@ The integration exports the following five metrics to Azure monitor:
    :widths: 30 30
 
    * - Metric Exported
-     - Metric Name in Azure monitor
+     - Metric Name in Azure Monitor
 
    * - Average number of requests
      - ``average_requests_per_minute``
@@ -151,28 +151,28 @@ The integration exports the following five metrics to Azure monitor:
 
 Non zero values of all the above metrics are exported over a one minute time interval. 
 
-To navigate to `Azure monitor metrics dashboard <https://portal.azure.com/#blade/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/metrics>`_
+To navigate to `Azure Monitor metrics dashboard <https://portal.azure.com/#blade/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/metrics>`_
 ,click ``View Metrics``.
 
 .. thumbnail:: /img/graphql/cloud/metrics/azure-monitor-view-metrics.png
-   :alt: Azure monitor Integration successfully configured
+   :alt: Azure Monitor Integration successfully configured
    :width: 1146px
 
 From the ``Select a scope`` panel, expand the resource group which contains the ``Log analytics workspace`` and select it
 and click ``Apply``.In the filter menu, select the correct namespace and ``Add filter`` to view the individual metric.
 
 .. thumbnail:: /img/graphql/cloud/metrics/azure-monitor-metrics.png
-   :alt: Metrics successfully exported to Azure monitor
+   :alt: Metrics successfully exported to Azure Monitor
    :width: 1146px
 
 View logs
 ---------
    
-To navigate to `Azure monitor logs dashboard <https://portal.azure.com/#blade/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/logs>`_
+To navigate to `Azure Monitor logs dashboard <https://portal.azure.com/#blade/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/logs>`_
 , click ``View Logs``.
    
 .. thumbnail:: /img/graphql/cloud/metrics/azure-monitor-view-logs.png
-    :alt: Azure monitor Integration successfully configured
+    :alt: Azure Monitor Integration successfully configured
     :width: 1146px
 
 From the ``Select a scope`` panel, expand the resource group which contains the ``Log analytics workspace`` and select it
@@ -180,7 +180,7 @@ and click ``Apply``.  The logs can be filtered using ``Log type``. Use ``{YOUR_L
 logs. Custom log types are displayed in the left of the Query panel.
 
 .. thumbnail:: /img/graphql/cloud/metrics/azure-monitor-logs.png
-    :alt: Logs successfully exported to Azure monitor
+    :alt: Logs successfully exported to Azure Monitor
     :width: 1146px
    
 
@@ -188,7 +188,7 @@ logs. Custom log types are displayed in the left of the Query panel.
 View traces
 -----------
 
-To navigate to `Azure monitor traces dashboard <https://portal.azure.com/#blade/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/applicationsInsights>`_
+To navigate to `Azure Monitor traces dashboard <https://portal.azure.com/#blade/Microsoft_Azure_Monitoring/AzureMonitoringBrowseBlade/applicationsInsights>`_
 , click ``View traces``.
 
 .. thumbnail:: /img/graphql/cloud/metrics/azure-monitor-view-traces.png
